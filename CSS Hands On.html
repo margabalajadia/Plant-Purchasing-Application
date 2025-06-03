@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Using Cascading Style Sheets</title>
+</head>
+
+<body>
+    <h1 class="line1">PLANT MARKETPLACE</h1>
+
+    <div id="divSignUp">
+        <h1 id="signUp">Sign Up</h1>
+        <p class="center">Sign up to continue</p>
+        <hr>
+
+        <h3 class="subheaders">Personal Information</h3>
+        <form id="personalInformationForm">
+            <label class="label" for="fname">First Name:</label>
+            <input class="input" type="text" name="fname">
+
+            <label class="label" for="lname">Last Name:</label>
+            <input class="input" type="text" name="lname"><br>
+
+            <label class="label" for="bday">Birthday:</label>
+            <input class="bday" type="date" name="bday"><br>
+
+            <label class="label" for="address">Address:</label>
+            <input class="input" type="text" name="address"><br>
+
+            <label class="label" for="number">Phone Number:</label>
+            <input class="number" type="number" name="number" placeholder="09123456789"><br>
+
+            <label class="label" for="email">Email:</label>
+            <input class="email" type="email" name="email"><br>
+
+            <label class="label" for="password">Password:</label>
+            <input class="password" type="password" name="password"><br>
+            
+            <input class="checkbox" type="checkbox" name="rememberMe" value="rememberMe">
+            <label id=rememberMe for="rememberMe"> Remember me </label>
+
+            <button type="submit" id="signUpButton" name="signUpButton">Sign Up</button>
+        </form>
+    </div>
+
+    <div id="divLogIn">
+        <h1 id="logIn">Log In</h1>
+        <p class="center">Log in to my account</p>
+        <hr>
+
+        <form id="logInForm">
+            <input class="logEmail" type="email" name="email" placeholder="Username"><br>
+
+            <input class="logPassword" type="password" name="password" placeholder="Password"><br>
+
+            <input class="checkbox" type="checkbox" name="keepMe" value="keepMe">
+            <label id=keepMe for="keepMe"> Keep me logged in </label>
+
+            <button type="submit" id="logInButton" name="logInButton"> Log In </button>
+            <p class="center underlined"> Forgot my password</p>
+
+        </form>
+    </div> 
+    
+    <div id="divPlants">
+        <h3 id="adoptPlant"> Adopt a Plant </h3>
+        <table>
+            <tr>
+                <td>
+                    <img src='images/money tree.webp'>
+                    <a class="plantName"> Money Tree </a>
+                    <a class="plantPrice"> ₱ 350.00</a>
+                </td>
+                <td>
+                    <img src='images/snake plant.webp'>
+                    <a class="plantName"> Snake Plant </a>
+                    <a class="plantPrice"> ₱ 200.00</a>
+                </td>
+                <td>
+                    <img src="images/cheese plant.jpg">
+                    <a class="plantName"> Cheese Plant </a>
+                    <a class="plantPrice"> ₱ 500.00</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/boston fern.webp">
+                    <a class="plantName"> Boston Fern </a>
+                    <a class="plantPrice"> ₱ 200.00</a>
+                </td>
+                <td>
+                    <img src="images/rubber plant.webp">
+                    <a class="plantName"> Rubber Plant </a>
+                    <a class="plantPrice"> ₱ 350.00</a>
+                </td>
+                <td>
+                    <img src="images/bamboo palm.webp">
+                    <a class="plantName"> Bamboo Palm </a>
+                    <a class="plantPrice"> ₱ 450.00</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divPayment">
+        <h3 id="checkout">Checkout</h3>
+        <hr>
+        <form id="checkoutForm">
+            <div id="divCheckOutDetails">
+                <h3 class="checkOutDetails">Margarita Balajadia</h3>
+                <p class="checkOutDetails">0123 Javier St., Lagundi Morong, Rizal, 1960</p>
+                <p class="checkOutDetails">09123456789</p>
+            </div>
+
+            <div>
+                <table id="purchaseTable">
+                      <tr>
+                        <th class="purchase">Plant Name</th>
+                        <th class="purchase">Quantity</th>
+                        <th class="purchase">Amount</th>
+                      </tr>
+                      <tr>
+                        <td class="purchase">Money Tree</td>
+                        <td class="purchase">1</td>
+                        <td class="purchase">₱ 350.00</td>
+                      </tr>
+                      <tr>
+                        <td class="purchase">Snake Plant</td>
+                        <td class="purchase">1</td>
+                        <td class="purchase">₱ 200.00</td>
+                      </tr>
+                      <tr>
+                        <td class="purchase">Cheese Plant </td>
+                        <td class="purchase">1</td>
+                        <td class="purchase">₱ 500.00</td>
+                      </tr>
+                     
+                  </table>
+                
+            </div>
+
+            <label class="label" for="modeOfPayment">Mode of Payment:</label>
+            <select class="select" name="modeOfPayment" id="modeOfPayment">
+                <option value="Gcash">Gcash</option>
+                <option value="Paymaya">Paymaya</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select><br>
+
+            <label class="label" for="applyVoucher">Apply Voucher:</label>
+            <input class="input" type="text" name="applyVoucher"><br>
+
+            <p class="label">Estimated Delivery:</p>
+            <p id="date">May 12, 2025</p><br>
+
+            <h3 id="totalAmount">Total Amount: <span>₱ 1,050.00</span></h3><br>
+
+            <button id="placeOrder" type="submit" id="placeOrder" name="placeOrder">
+                Place Order 
+            </button>
+        </form>
+    </div>
+</body>
+</html>
